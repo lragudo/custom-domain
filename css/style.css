@@ -1,8 +1,8 @@
 /* UNIVERSAL */
 :root{
-    --secondaryColor1: #333333;
     --primaryColor1: #F4A7A7;
-    --primaryColor2: #AF4256;
+    --dark1: #333333;
+    --
     --light1: #fff;
 }
 
@@ -23,16 +23,16 @@ main, footer{
 }
 /* MARGINS */
 .space1, .space2{
-    grid-row: 1/ span 1;
+    grid-row: 1/ span 2;
 }
 .space3, .space4{
-    grid-row: 2/ span 1;
+    grid-row: 3/ span 2;
 }
 .space2, .space4{
     grid-column: 3/4;
 }
 .space3, .space4{
-    background: var(--secondaryColor1);
+    background: var(--dark1);
 }
 
 img{
@@ -84,11 +84,78 @@ header h1{
     text-transform: uppercase;
 }
 header{
-    background: var(--secondaryColor1);
+    background: var(--dark1);
     padding: 2rem 5rem;
     margin-bottom: 3rem;
 }
 
+/**********
+PORT ITEMS
+*********/
+/* Title */
+.portItems{
+    display: flex;
+    flex-direction: column;
+}
+.portItems h1{
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem;
+  writing-mode: horizontal-tb;
+  background: var(--dark1);
+  color: white;
+}
+
+.portItems button{
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* Content for each section */
+.web, .motion{
+  height: 0;
+  opacity: 0;
+  transition: .25s;
+  transition-property: all;
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.do-this{
+  height: auto;
+  opacity: 1;
+  transition: 1s;
+  transition-property: all;
+}
+
+/* Port Items */
+.portItems .image{
+  background: #1F817B;
+  border-radius: 10px;
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item{
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portItems .image:hover{
+  opacity: .8;
+}
+.item h2 {
+  margin:0;
+  margin-top: .75rem;
+}
 /**********
  BIO 
  *********/
@@ -105,7 +172,7 @@ header{
  CONTACT
  *********/
 .contact{
-background: var(--secondaryColor1);
+background: var(--dark1);
 }
 .contact h2{
     color: var(--primaryColor1);
