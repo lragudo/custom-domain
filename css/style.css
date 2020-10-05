@@ -1,8 +1,12 @@
 /* UNIVERSAL */
 :root{
     --primaryColor1: #F4A7A7;
+    --webColor1:#A3D992;
+    --motionColor1: #B4B2EF;
+    --illusColor1: #99E7E5;
+    --printColor1: #F0AD56;
+    --highlight: #FDDC5E;
     --dark1: #333333;
-    --
     --light1: #fff;
 }
 
@@ -90,13 +94,13 @@ header{
 }
 
 /**********
-PORT ITEMS
+PORT ITEMS SECTON
 *********/
-/* Title */
 .portItems{
     display: flex;
     flex-direction: column;
 }
+/* titles & buttons*/
 .portItems h1{
   margin: 0;
   font-size: 3rem;
@@ -107,6 +111,12 @@ PORT ITEMS
   background: var(--dark1);
   color: white;
 }
+.webButton h1{
+color:var(--webColor1);
+}
+.motionButton h1{
+    color: var(--motionColor1);
+}
 
 .portItems button{
   background: none;
@@ -116,14 +126,15 @@ PORT ITEMS
 
 /* Content for each section */
 .web, .motion{
+  padding: 0;
   height: 0;
   opacity: 0;
   transition: .25s;
   transition-property: all;
-  display: flex;
   overflow: hidden;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
 }
 .do-this{
   height: auto;
@@ -132,15 +143,21 @@ PORT ITEMS
   transition-property: all;
 }
 
-/* Port Items */
+/* indiidual portfolio pieces */
 .portItems .image{
-  background: #1F817B;
   border-radius: 10px;
   width: 15rem;
   height: 15rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 3px solid transparent;
+}
+.web .image{
+    background: var(--webColor1);
+}
+.motion .image{
+    background: var(--motionColor1);
 }
 .item{
   padding: .5rem;
@@ -150,7 +167,7 @@ PORT ITEMS
   align-items: center;
 }
 .portItems .image:hover{
-  opacity: .8;
+  border: 3px solid var(--webColor1);
 }
 .item h2 {
   margin:0;
@@ -240,11 +257,20 @@ footer .paragraph p{
 MEDIA QUERIES 
 *********/
 @media screen and (max-width: 1000px){
-section{
-    grid-template-columns: 1fr;
+    section{
+        grid-template-columns: 1fr;
     }
     .paragraph2{
         grid-row: 1/-1;
         padding-top: 0;
+    }
+    .web, .motion{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+@media screen and (max-width: 700px){
+    .web, .motion{
+        grid-template-columns: 1fr;
     }
 }
