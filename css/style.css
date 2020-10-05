@@ -9,24 +9,32 @@
 body{
     margin: 0;
     font-family: 'IBM Plex Sans', 'Helvetica', sans-serif;
-    background-image: url(/images/pattern1.png);
+    background-image: url(/images/pattern5.png);
     background-attachment: fixed;
     background-position: center center;
     background-repeat: repeat;
     background-size: 400px;
     
   }
-main{
+main, footer{
     margin: 2rem 0;
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
 }
+/* MARGINS */
 .space1, .space2{
-    grid-row: 1/ span 2;
+    grid-row: 1/ span 1;
 }
-.space2{
+.space3, .space4{
+    grid-row: 2/ span 1;
+}
+.space2, .space4{
     grid-column: 3/4;
 }
+.space3, .space4{
+    background: var(--secondaryColor1);
+}
+
 img{
     width:100%;
   }
@@ -97,7 +105,6 @@ header{
  CONTACT
  *********/
 .contact{
-margin-top: 2rem;
 background: var(--secondaryColor1);
 }
 .contact h2{
@@ -154,7 +161,13 @@ button{
     background: none;
 }
 
-
+footer .paragraph{
+    flex-direction: column;
+    margin-left: 0;
+}
+footer .paragraph p{
+    padding-left: 0;
+}
 
 /**********
 MEDIA QUERIES 
