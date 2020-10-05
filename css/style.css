@@ -112,12 +112,17 @@ PORT ITEMS SECTON
   color: white;
 }
 .webButton h1{
-color:var(--webColor1);
+    color:var(--webColor1);
 }
 .motionButton h1{
     color: var(--motionColor1);
 }
-
+.printButton h1{
+    color:var(--printColor1);
+}
+.illusButton h1{
+    color: var(--illusColor1);
+}
 .portItems button{
   background: none;
   border: none;
@@ -125,11 +130,11 @@ color:var(--webColor1);
 }
 
 /* Content for each section */
-.web, .motion{
+.web, .motion, .print, .illustration{
   padding: 0;
   height: 0;
   opacity: 0;
-  transition: .25s;
+  transition: .5s;
   transition-property: all;
   overflow: hidden;
   display: grid;
@@ -159,6 +164,12 @@ color:var(--webColor1);
 .motion .image{
     background: var(--motionColor1);
 }
+.print .image{
+    background: var(--printColor1);
+}
+.illustration .image{
+    background: var(--illusColor1);
+}
 .item{
   padding: .5rem;
   display: flex;
@@ -166,9 +177,18 @@ color:var(--webColor1);
   justify-content: center;
   align-items: center;
 }
-.portItems .image:hover{
+.web .image:hover{
   border: 3px solid var(--webColor1);
 }
+.motion .image:hover{
+    border: 3px solid var(--motionColor1);
+  }
+.print .image:hover{
+    border: 3px solid var(--printColor1);
+  }
+.illustration .image:hover{
+    border: 3px solid var(--illusColor1);
+  }
 .item h2 {
   margin:0;
   margin-top: .75rem;
@@ -264,13 +284,13 @@ MEDIA QUERIES
         grid-row: 1/-1;
         padding-top: 0;
     }
-    .web, .motion{
+    .web, .motion, .print, .illustration{
         grid-template-columns: 1fr 1fr;
     }
 
 }
 @media screen and (max-width: 700px){
-    .web, .motion{
+    .web, .motion, .print, .illustration{
         grid-template-columns: 1fr;
     }
 }
