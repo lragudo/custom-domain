@@ -1,6 +1,7 @@
 /* UNIVERSAL */
 :root{
-    --primaryColor1: #F4A7A7;
+    --primaryColor1: #FFC0CC;
+    --primaryColor2: #AE6178;
     --webColor1:#A3D992;
     --motionColor1: #B4B2EF;
     --illusColor1: #99E7E5;
@@ -30,18 +31,38 @@ img{
   }
 section{
     display: grid;
-    grid-template-columns: 1fr 4fr 4fr;
+    grid-template-columns: 1fr 1fr;
     padding: 1.5rem 0;
     grid-gap: .5rem;;
     justify-items: self-start;
+    align-items: flex-start;
+    
   }
 h1{
     font-size: 5rem;
     margin: 0rem;
+    padding: 0;
     writing-mode: sideways-lr;
-    color: var(--primaryColor1);
-    line-height: 2rem;
+    color: var(--dark1);
     text-transform: uppercase;
+    width: 5rem;
+}
+.title{
+    background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 0%,
+    var(--primaryColor1) 0%,
+    var(--primaryColor1)100%
+  );
+  background-repeat: no-repeat;
+  background-size: 55% 97%;
+  background-position: top right;
+  box-shadow: 1.75rem -1.5rem 0 -1rem var(--primaryColor2);
+}
+span{
+    position: relative;
+    left: -6rem;
 }
 h2{
     color: var(--primaryColor2);
@@ -53,16 +74,10 @@ p{
 }
 .paragraph{
     max-width: 35rem;
-    display: flex;
-    padding: 0 .5rem;
-    padding-left: 0rem;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 1.5rem;
     align-items: flex-start;
-    justify-content: center;
-    margin-left: .9rem;
-}
-.paragraph p{
-    background: rgba(255,255,255,.5);
-    padding: 0 .5rem;
 }
 
 /**********
