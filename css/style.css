@@ -25,26 +25,12 @@ main, footer{
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
 }
-/* MARGINS */
-.space1, .space2{
-    grid-row: 1/ span 2;
-}
-.space3, .space4{
-    grid-row: 3/ span 2;
-}
-.space2, .space4{
-    grid-column: 3/4;
-}
-.space3, .space4{
-    background: var(--dark1);
-}
-
 img{
     width:100%;
   }
 section{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 4fr 4fr;
     padding: 1.5rem 0;
     grid-gap: .5rem;;
     justify-items: self-start;
@@ -93,117 +79,14 @@ header{
     margin-bottom: 3rem;
 }
 
-/**********
-PORT ITEMS SECTON
-*********/
-.portItems{
-    grid-template-columns: 1fr;
-    justify-items: center;
-    
-}
-/* titles & buttons*/
-.portItems button{
-    background: none;
-    border: none;
-    padding: 0;
-    background: var(--dark1);
-    width: 80vw;
-    min-width: 20rem;
-  }
 
-.portItems h1{
-  margin: 0;
-  padding: 1rem;
-  font-size: 3rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  writing-mode: horizontal-tb;
-  color: white;
-}
-.webButton h1{
-    color:var(--webColor1);
-}
-.motionButton h1{
-    color: var(--motionColor1);
-}
-.printButton h1{
-    color:var(--printColor1);
-}
-.illusButton h1{
-    color: var(--illusColor1);
-}
-
-
-/* Content for each section */
-.web, .motion, .print, .illustration{
-  padding: 0;
-  height: 0;
-  opacity: 0;
-  transition: .5s;
-  transition-property: all;
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-}
-.do-this{
-  height: auto;
-  opacity: 1;
-  transition: 1s;
-  transition-property: all;
-}
-
-/* indiidual portfolio pieces */
-.portItems .image{
-  border-radius: 10px;
-  padding: 0;
-  width: 15rem;
-  height: 15rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 3px solid transparent;
-}
-.web .image{
-    background: var(--webColor1);
-}
-.motion .image{
-    background: var(--motionColor1);
-}
-.print .image{
-    background: var(--printColor1);
-}
-.illustration .image{
-    background: var(--illusColor1);
-}
-.item{
-  padding: .5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.web .image:hover{
-  border: 3px solid var(--webColor1);
-}
-.motion .image:hover{
-    border: 3px solid var(--motionColor1);
-  }
-.print .image:hover{
-    border: 3px solid var(--printColor1);
-  }
-.illustration .image:hover{
-    border: 3px solid var(--illusColor1);
-  }
-.item h2 {
-  margin:0;
-  margin-top: .75rem;
-}
 /**********
  BIO 
  *********/
+.bio{
+    grid-column: 2/3;
+ }
 .bio .image{
-    grid-row: 1/2;
     margin-bottom: 1.5rem;
   } 
 .image{
@@ -215,7 +98,8 @@ PORT ITEMS SECTON
  CONTACT
  *********/
 .contact{
-background: var(--dark1);
+    background: var(--dark1);
+    grid-column: 2/3;
 }
 .contact h2{
     color: var(--primaryColor1);
