@@ -97,18 +97,27 @@ header{
 PORT ITEMS SECTON
 *********/
 .portItems{
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    
 }
 /* titles & buttons*/
+.portItems button{
+    background: none;
+    border: none;
+    padding: 0;
+    background: var(--dark1);
+    width: 80vw;
+    min-width: 20rem;
+  }
+
 .portItems h1{
   margin: 0;
+  padding: 1rem;
   font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 1rem;
   writing-mode: horizontal-tb;
-  background: var(--dark1);
   color: white;
 }
 .webButton h1{
@@ -123,11 +132,7 @@ PORT ITEMS SECTON
 .illusButton h1{
     color: var(--illusColor1);
 }
-.portItems button{
-  background: none;
-  border: none;
-  padding: 0;
-}
+
 
 /* Content for each section */
 .web, .motion, .print, .illustration{
@@ -151,6 +156,7 @@ PORT ITEMS SECTON
 /* indiidual portfolio pieces */
 .portItems .image{
   border-radius: 10px;
+  padding: 0;
   width: 15rem;
   height: 15rem;
   display: flex;
@@ -276,6 +282,12 @@ footer .paragraph p{
 /**********
 MEDIA QUERIES 
 *********/
+@media screen and (min-width: 1700px){
+    .web, .motion, .print, .illustration{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
 @media screen and (max-width: 1000px){
     section{
         grid-template-columns: 1fr;
