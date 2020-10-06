@@ -172,14 +172,14 @@ button{
 
 footer {
     flex-direction: column;
-    margin-left: 0;
-
+    margin: 0;
 }
 footer p{
     padding-left: 0;
 }
 .content{
     grid-column: 2/3;
+    padding: 1rem;
 }
 
 /**********
@@ -204,12 +204,17 @@ MEDIA QUERIES
     .bio p{
         grid-column: 1/2;
     }
-    h1{
+    .light h1, .dark h1{
         margin: 0;
         font-size: 3rem;
         writing-mode: horizontal-tb;
         background-size: 100% 60%;
         background-position: right bottom;
+    }
+    .light h1{
         box-shadow: 1rem 1.2rem 0 -.7rem var(--primaryColor2);
+    }
+    .dark h1{
+        box-shadow: 1rem 1.2rem 0 -.7rem var(--primaryColor1);
     }
 }
