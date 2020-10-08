@@ -1,5 +1,7 @@
+# lillianrosedesign.com
+
 # Portfolio
-* This is version 2 of my portfolio website
+* This is version 3 of my portfolio website
 * The goal for this site is to show case my work and to be its own testiment to my web design abilities
 * Design and coded by Lillian Ragudo October 2020
 
