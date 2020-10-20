@@ -6,7 +6,7 @@
 * Design and coded by Lillian Ragudo October 2020
 
 # Github Repo
-https://github.com/lragudo/portfolio
+https://github.com/lragudo/custom-domain
 
 # Figma Design Concepts
 https://www.figma.com/file/iAebEp84mDdRlOrXwu1PFe/Portfolio-Website?node-id=0%3A1
