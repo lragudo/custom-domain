@@ -146,37 +146,7 @@ a{
     color: var(--primaryColor1);
     padding: 1rem;
 }
-/**********
-PORTFOLIO SECTIONS
-*********/
-.portItem p{
-    font-size: .75rem;
-    margin: 0;
-    padding: 0;
-}
-.info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.portItem{
-    max-width: 25vw;
-    height: auto;
-    padding: 0;
-    border: 5px solid var(--primaryColor2 );
-    color: var(--light1);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 0 0 var(--primaryColor2);
-    transition: box-shadow .5s ease-in-out;
-    background: var(--dark1);
-  }
-  .portItem:hover{
-    box-shadow: .75rem .75rem 0 0 var(--primaryColor2);
-  }
+
 /**********
  BIO 
  *********/
