@@ -176,6 +176,11 @@ a{
  *********/
 .items{
     grid-column: 2/3;
+    grid-template-columns: 1fr 5fr;
+}
+.items div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .items h3{
     color: var(--dark1);
