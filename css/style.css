@@ -134,7 +134,7 @@ p{
         var(--primaryColor2) 100%
     );
     background-repeat: no-repeat;
-    background-size: 14rem 45%;
+    background-size: 10rem 45%;
     background-position: 1% 24%;
 }
 /**********
@@ -168,6 +168,19 @@ a{
     font-size: 1.25rem;
     color: var(--primaryColor1);
     padding: 1rem;
+}
+a:hover{
+    color: var(--light1);
+    background: linear-gradient(
+    to top,
+    transparent 0%,
+    transparent 0%,
+    var(--primaryColor2) 0%,
+    var(--primaryColor2) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 90%  40%;
+  background-position: 60% 75%;
 }
 
 
