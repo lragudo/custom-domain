@@ -47,7 +47,7 @@ section{
 
 
 h1{
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin: 0 1rem 0 0;
     padding: 0;
     writing-mode: sideways-lr;
@@ -181,11 +181,31 @@ a{
 .items div{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
 }
 .items h3{
-    color: var(--dark1);
     text-transform: none;
-    font-weight: 500; 
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.items a{
+    text-decoration: none;
+    max-width: 25vw;
+    height: auto;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    background: #333;
+    color: white;
+    box-shadow: 0 0 0 0 #AE6178;
+    transition: box-shadow .25s ease-in-out;
+    border: 5px solid #AE6178;
+    border-radius: 5px;
+}  
+section a:hover{
+    box-shadow: .5rem .5rem 0 0 #AE6178;
+
 }
 
 /**********
@@ -301,6 +321,7 @@ Detailed Port Items Page
 /* header */
 .itemSection h1{
     grid-column: 2/3;
+    grid-row: span 2;
 }
 /* Metadata text */
 .info{
@@ -318,6 +339,30 @@ Detailed Port Items Page
 }
 .info a{
   padding-bottom: 1em;
+}
+/* Back Button */
+.itemSection a[href^="index.html"] {
+  color: var(--primaryColor2);
+
+  grid-column: 3/4;
+  justify-self: end;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+}
+.itemSection a[href^="index.html"]:hover{
+  color: var(--dark1);
+  background: linear-gradient(
+    to top,
+    transparent 0%,
+    transparent 0%,
+    var(--primaryColor1) 0%,
+    var(--primaryColor1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 75%  40%;
+  background-position: 50% 65%;
 }
 
 
