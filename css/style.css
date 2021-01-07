@@ -117,26 +117,20 @@ p{
     font-style: normal;
     font-size: 24px;
   }
+
   /* dark links */
 .dark a{
-    color: var(--primaryColor1);
-    text-decoration: none;
+    color: var(--light1);
     text-transform: none;
   }
-  
+  .dark a span{
+    text-decoration: underline;
+  }
 .dark a:hover{
-    color: white;
-    background: linear-gradient(
-        to top,
-        transparent 0%,
-        transparent 0%,
-        var(--primaryColor2) 0%,
-        var(--primaryColor2) 100%
-    );
-    background-repeat: no-repeat;
-    background-size: 10rem 45%;
-    background-position: 1% 24%;
+    color: var(--primaryColor1);
+    background: none;
 }
+
 /**********
 HEADER
 *********/
