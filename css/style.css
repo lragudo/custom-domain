@@ -138,6 +138,7 @@ p{
 .dark a:hover{
     color: var(--primaryColor1);
     background: none;
+    box-shadow: none;
 }
 
 /**********
@@ -460,7 +461,6 @@ MEDIA QUERIES
     .itemSection section{
         grid-template-columns: 1fr;
         grid-column: 2/3;
-      }
     }
     .itemSection a[href^="index.html"], .itemSection .info{
         grid-column: 2/3;
