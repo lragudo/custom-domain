@@ -127,10 +127,13 @@ p{
   /* dark links */
 .dark a{
     color: var(--light1);
+    font-weight: 600;
     text-transform: none;
+    text-decoration: none;
   }
-  .dark a span{
+.dark a span{
     text-decoration: underline;
+    align-self: center;
   }
 .dark a:hover{
     color: var(--primaryColor1);
@@ -282,7 +285,11 @@ footer {
     color: white;
     text-transform: none;
     font-size: 1rem;
-    padding-left: .5rem;
+}
+.content p{
+    display: grid;
+    grid-template-columns: .5fr 5fr;
+    align-items: center;
 }
 footer div{
     width: 100%;
@@ -331,6 +338,8 @@ Detailed Port Items Page
 .itemSection h1{
     grid-column: 2/3;
     grid-row: span 2;
+    justify-self: flex-start;
+    margin: .5em 0;
 }
 /* Metadata text */
 .info{
@@ -352,7 +361,6 @@ Detailed Port Items Page
 /* Back Button */
 .itemSection a[href^="index.html"] {
   color: var(--primaryColor2);
-
   grid-column: 3/4;
   justify-self: end;
   font-size: 1.5rem;
@@ -370,7 +378,7 @@ Detailed Port Items Page
     var(--primaryColor1) 100%
   );
   background-repeat: no-repeat;
-  background-size: 75%  40%;
+  background-size: 110% 45%;
   background-position: 50% 65%;
 }
 /**********
@@ -449,29 +457,23 @@ MEDIA QUERIES
   }
 
 @media screen and (max-width: 1000px){
-    section{
-        grid-template-columns: 1fr 5fr;
-    }
     .itemSection section{
         grid-template-columns: 1fr;
-      }
-    .itemSection{
-    grid-template-columns: .5fr .5fr 7fr .5fr;
-    }
-    #bio p{
         grid-column: 2/3;
+      }
     }
-}
-@media screen and (max-width: 700px){
-    section{
-        grid-template-columns: 1fr;
+    .itemSection a[href^="index.html"], .itemSection .info{
+        grid-column: 2/3;
+        grid-row-end: auto;
     }
-    #bio p{
-        grid-column: 1/2;
+    .itemSection{
+        grid-template-columns: .5fr 7fr .5fr;
+    }
+    .itemSection h1{
+        grid-row: span 1;
     }
     .light h1, .dark h1{
-        margin: 0;
-        font-size: 3rem;
+        font-size: 2rem;
         writing-mode: horizontal-tb;
         background-size: 100% 60%;
         background-position: right bottom;
@@ -482,10 +484,36 @@ MEDIA QUERIES
     .dark h1{
         box-shadow: 1rem 1.2rem 0 -.7rem var(--primaryColor1);
     }
+    section{
+        grid-template-columns: 1fr;
+    }
+    .items div{
+        grid-template-columns: 1fr 1fr;
+    }
+    .items a{
+        max-width: 100%;
+    }
+    .items{
+        grid-template-columns: 1fr;
+    }
+    .form{
+        align-items: flex-start;
+    }
+}
+@media screen and (max-width: 700px){
+    section{
+        grid-template-columns: 1fr;
+    }
+    .light h1, .dark h1{
+        font-size: 1.5rem;
+    }
+    .items div{
+        grid-template-columns: 1fr;
+    }
     .itemSection{
         grid-template-columns: .5fr 7fr .5fr;
         }
-    .info, h1, .itemSection section{
+    .info, .itemSection section{
         grid-column: 2/3;
         margin-top: 1rem;
     }
@@ -493,5 +521,8 @@ MEDIA QUERIES
         grid-column: 3/4;
         grid-row: 2/3;
         margin-top: 1rem;
+    }
+    footer{
+        background: var(--dark1);
     }
 }
