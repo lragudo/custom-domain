@@ -382,51 +382,54 @@ MY PROCESS
 /**********
 RESUME
 *********/
-.resume .dark{
-    grid-template-columns: 1fr 1fr 1fr;
+/* all */
+.resume .darkspace{
+    grid-column: 3/4;
+    grid-row: 1/2;
 }
-.resume img{
+/* Contact */
+.contact{
+    grid-template-columns: 1fr 1fr 1fr;
+    color: var(--light1);
+}
+.contact img{
     border-radius: 50%;
     max-width: 175px;
     grid-row: span 2;
     justify-self: center;
 }
-.resume .darkspace{
-    grid-column: 3/4;
-    grid-row: 1/2;
-}
-.resume p{
-    font-weight: 400;
-}
-.resume h5{
+
+.contact h5{
     grid-column: 2/ span 2;
     justify-items: center;
-}
-.dark h5{
     color: var(--primaryColor1)
 }
-.history h5{
-    margin-top: .75em
+/* History + Skills */
+.professional h5{
+    margin-top: .75em;
+    color: var(--primaryColor2);
 }
-.history h4{
-    margin-bottom: 1em;
+.professional h4{
+    background:var(--dark2);
+    color: var(--primaryColor1);
+    display: block;
+    padding: .5em; 
 }
 .professional{
-    grid-template-columns: 1fr;
-    padding: 0;
+    grid-template-columns: .5fr 5fr;
+    margin: 1en 0;
     background: rgba(255, 255, 255, .7);
 }
+/* just history */
 .history{
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-.professional h4{
-    background:var(--dark4);
-    color: var(--primaryColor2);
-    display: block;
-    padding: .5em; 
+.history h4{
+    margin-bottom: 1em;
 }
+/* just skills */
 .skills div{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
