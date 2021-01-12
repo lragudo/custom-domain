@@ -526,3 +526,31 @@ MEDIA QUERIES
         background: var(--dark1);
     }
 }
+@media screen and (max-width: 370px){
+    .light h1, .dark h1{
+        font-size: 1rem;
+    }
+    .items h3{
+        font-size: .75rem;
+        font-weight: 600;
+    }
+    p, .dark a, label, button{
+        font-weight: 400;
+        font-size: .75rem;
+    }
+    .material-icons{
+        font-size: 12px;
+    }
+    .info p{
+        padding: .25em .25em .25em .5em;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav a{
+        font-size: 1rem;
+    }
+    h3 {
+        font-size: 1.25rem;
+    }
+}
