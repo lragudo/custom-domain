@@ -80,8 +80,8 @@ h1{
         var(--primaryColor2)100%
     );
     background-repeat: no-repeat;
-    background-size: 100% 60%;
-    background-position: right bottom;
+    background-size: 60% 98%;
+    background-position: top right;
     box-shadow: 1.3rem -.8rem 0 -.5rem var(--primaryColor1);
 }
 h3{
@@ -452,7 +452,7 @@ RESUME
 /**********
 LINK PAGE
 *********/
-.link section{
+.link{
     display: grid;
     grid-template-columns: 1fr;
     max-width: 80vw;
@@ -467,6 +467,7 @@ LINK PAGE
 }
 .link h1{
     writing-mode: horizontal-tb;
+    background-size: 100% 98%;
 }
 .link a{
     background: var(--dark1);
