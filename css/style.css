@@ -80,8 +80,8 @@ h1{
         var(--primaryColor2)100%
     );
     background-repeat: no-repeat;
-    background-size: 60% 98%;
-    background-position: top right;
+    background-size: 100% 60%;
+    background-position: right bottom;
     box-shadow: 1.3rem -.8rem 0 -.5rem var(--primaryColor1);
 }
 h3{
@@ -241,6 +241,7 @@ section a:hover{
 .form{
     display: flex;
     align-items: center;
+
 }
 label{
     width: 100%;
@@ -449,6 +450,42 @@ RESUME
     grid-gap: .5em;
 }
 /**********
+LINK PAGE
+*********/
+.link section{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 80vw;
+    justify-items: center;
+}
+.link nav{
+    display: grid;
+}
+.link img{
+    border-radius: 50%;
+    max-width: 300px;
+}
+.link h1{
+    writing-mode: horizontal-tb;
+}
+.link a{
+    background: var(--dark1);
+    width: 300px;
+    margin: .5em 0;
+    padding: 1em;
+    text-align: center;
+    border: solid 5px var(--dark1);
+}
+
+.link a:hover{
+    color: var(--primaryColor1);
+    border: solid 5px var(--primaryColor2);
+    background: var(--dark1);
+    box-shadow: none;
+}
+
+
+/**********
 MEDIA QUERIES 
 *********/
 @media screen and (max-width: 2000px){
@@ -555,7 +592,7 @@ MEDIA QUERIES
         align-items: center;
         flex-direction: column;
     }
-    .darkspace{
+    .resume .darkspace{
         margin: 0;
     }
 }
