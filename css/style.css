@@ -53,7 +53,8 @@ h1{
     font-size: 2rem;
     margin: 0 1rem 0 0;
     padding: 0;
-    writing-mode: sideways-lr;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
     text-transform: uppercase;
 }
 .light h1{
@@ -67,8 +68,8 @@ h1{
     );
     background-repeat: no-repeat;
     background-size: 60% 98%;
-    background-position: top right;
-    box-shadow: 1.3rem -.8rem 0 -.5rem var(--primaryColor2);
+    background-position: bottom left;
+    box-shadow: -1rem 1.1rem 0 -.4rem  var(--primaryColor2);
 }
 .dark h1{
     color: var(--light1);
@@ -81,8 +82,8 @@ h1{
     );
     background-repeat: no-repeat;
     background-size: 60% 98%;
-    background-position: top right;
-    box-shadow: 1.3rem -.8rem 0 -.5rem var(--primaryColor1);
+    background-position: bottom left;
+    box-shadow: -1rem 1.1rem 0 -.4rem  var(--primaryColor1);
 }
 h3{
     margin: 0;
@@ -522,6 +523,7 @@ MEDIA QUERIES
     .light h1, .dark h1{
         font-size: 2rem;
         writing-mode: horizontal-tb;
+        transform: rotate(0deg);
         background-size: 100% 60%;
         background-position: right bottom;
     }
