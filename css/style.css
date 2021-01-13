@@ -469,7 +469,7 @@ LINK PAGE
     writing-mode: horizontal-tb;
     background-size: 100% 98%;
 }
-.link a{
+.link nav a{
     background: var(--dark1);
     width: 300px;
     margin: .5em 0;
@@ -478,10 +478,16 @@ LINK PAGE
     border: solid 5px var(--dark1);
 }
 
-.link a:hover{
+.link nav a:hover{
     color: var(--primaryColor1);
     border: solid 5px var(--primaryColor2);
     background: var(--dark1);
+    box-shadow: none;
+}
+.link a[href^="index.html"]{
+    text-decoration: none;
+}
+.link a[href^="index.html"]:hover{
     box-shadow: none;
 }
 
