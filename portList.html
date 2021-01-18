@@ -13,17 +13,15 @@
     <title>Lillian Ragudo</title>
 </head>
 <body class="portPage">
-    <header>
-        <h3>Lillian Rose Design</h3>
-        <nav>
-          <a href="index.html#web">Web & UX</a>
-          <!-- <a href="index.html#motion">Motion</a> -->
-          <a href="index.html#print">Graphic Design</a>
-          <a href="index.html#illus">Illustration</a>
-          <a href="index.html#photo">Photography</a>
-          <a href="index.html#bio">My Story</a>
-          <a href="index.html#contact">Contact</a>
-        </nav>
+  <header>
+    <h3>Lillian Rose Design</h3>
+    <nav>
+      <a href="index.html#bio">My Story</a>
+      <a href="index.html#web">Portfolio</a>
+      <a href="#contact">Contact</a>
+      <!-- <a href="process.html">My Process</a> -->
+      <a href="resume.html">Resume</a>
+    </nav>
 </header>
 <main class="details">
   <div class="itemSection light" id="coloring">
@@ -90,6 +88,7 @@
       <p>
         <i class="material-icons">article</i>
         <span>I love playing tabletop games with friends and family. It’s an easy way for me to connect with others. However, your first time playing a new game can be difficult and the instructions are often long and complicated. I was inspired by the creators of Exploding Kittens and their animated instructions for all of their games.</span>
+        <span></span>
         <span>Eclectic Outlet is a card game that is fun and quick for teenagers and young adults. This game is also intended to be accessible to anyone as the cards are downloadable to print and the instructions are online. I went through three card deck prototypes and several rounds of play testing with different rules. </span>
       </p>
       <a href="https://www.figma.com/proto/r5Exjj66ltDlgU5Jdq0mMx/Card-Game-Instructions?node-id=37%3A57&scaling=min-zoom">
@@ -538,30 +537,44 @@
   </div>
 </main>
 <footer>
-    <div class="space2 dark"></div>
-      <div class="content dark">
-        <p>
-          <i class="material-icons">person</i>
-          <span>Lillian Rose Design</span>   
-        </p>
-        <p>
-          <i class="material-icons">phone</i>
-          <span>(509) 724-6926</span>   
-        </p>
-        <p>
-          <i class="material-icons">computer</i>
-          <a href="https://linktr.ee/lillianrosedesign">Links to Elsewhere</a>  
-        </p>
-        <p>
-          <i class="material-icons">mail</i>
-          <span>lillianrose.design@gmail.com</span>   
-        </p>
-        <p>
-          <i class="material-icons">place</i>
-          <span>Spokane, WA</span>  
-        </p>
-      </div>
-  </footer>
+  <div class="space2 dark"></div>
+  <section id="contact" class="dark">
+    <h1>Contact</h1>
+    <div class="form">
+        <form name="contact" method="POST" data-netlify-recaptcha="true">
+        <input type="hidden" name="form-name" value="contact">
+        <label>Your Name: <input type="text" name="name" required=""></label></p>
+        <p><label>Your Email: <input type="email" name="email" required=""></label></p>
+        <p><label>Message: <textarea name="message" required=""></textarea></label></p>  
+        <p><button type="submit">Send</button></p>
+        </form>
+    </div>
+    <div class="content dark">
+      <p>
+        <i class="material-icons">person</i>
+        <span>Lillian Rose Design</span>   
+      </p>
+      <p>
+        <i class="material-icons">phone</i>
+        <span>(509) 724-6926</span>   
+      </p>
+      <p>
+        <i class="material-icons">computer</i>
+        <a href="https://linktr.ee/lillianrosedesign">Links to Elsewhere</a>  
+      </p>
+      <p>
+        <i class="material-icons">mail</i>
+        <span>lillianr.design@gmail.com</span>   
+      </p>
+      <p>
+        <i class="material-icons">place</i>
+        <span>Spokane, WA</span>  
+      </p>
+    </div>
+  </section> 
+  
+  <div></div>
+</footer>
   <script src="js/scripts.js"></script>
 </body>
 </html>
