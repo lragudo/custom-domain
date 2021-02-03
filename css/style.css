@@ -443,6 +443,9 @@ RESUME
 .history h4{
     margin-bottom: 1em;
 }
+.history p{
+    margin: 1em 0;
+}
 /* just skills */
 .skills div{
     display: grid;
